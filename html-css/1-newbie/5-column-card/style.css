@@ -1,0 +1,97 @@
+:root {
+  /*primary*/
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+
+  /*neutral*/
+  /*paragraphs*/
+  --Transparent-white: hsla(0, 0%, 100%, 0.75);
+  /*background, headings, buttons*/
+  --Very-light-gray: hsl(0, 0%, 95%);
+  --titles: "Big Shoulders Display", cursive;
+  --normal-text: "Lexend Deca", sans-serif;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.grid-container {
+  max-width: 358px;
+}
+section {
+  display: grid;
+  justify-content: center;
+}
+.proyect-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 80px 0;
+  justify-content: center;
+}
+
+.section-sedans {
+  display: grid;
+  width: 90%;
+  background-color: var(--Bright-orange);
+  border-radius: 10px 10px 0 0;
+  margin: 0 auto;
+}
+
+.img-container {
+  padding: 30px;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: 700;
+  font-family: var(--titles);
+  padding-left: 30px;
+  margin-bottom: 30px;
+  color: var(--Very-light-gray);
+}
+
+.description {
+  font-family: var(--normal-text);
+  padding: 0 50px 0 30px;
+  color: var(--Transparent-white);
+}
+.button {
+  text-align: center;
+  display: block;
+  width: 130px;
+  height: 40px;
+  margin: 30px;
+  padding: 10px;
+  border-radius: 50px;
+  text-decoration: none;
+  background-color: var(--Very-light-gray);
+}
+.section-sedans .button {
+  color: var(--Bright-orange);
+}
+
+.section-suvs {
+  display: grid;
+  width: 90%;
+  background-color: var(--Dark-cyan);
+  margin: 0 auto;
+}
+
+.section-suvs .button {
+  color: var(--Dark-cyan);
+}
+
+.section-luxury {
+  display: grid;
+  width: 90%;
+  background-color: var(--Very-dark-cyan);
+  border-radius: 0 0 10px 10px;
+  margin: 0 auto;
+}
+
+.section-luxury .button {
+  color: var(--Very-dark-cyan);
+}
