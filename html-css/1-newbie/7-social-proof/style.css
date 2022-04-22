@@ -1,0 +1,140 @@
+:root {
+  --Very-Dark-Magenta: hsl(300, 43%, 22%);
+  --Soft-Pink: hsl(333, 80%, 67%);
+  --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+  --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "League Spartan", sans-serif;
+}
+html {
+  background-image: url(./images/bg-pattern-top-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+body {
+  height: 100vh;
+  background-image: url(./images/bg-pattern-bottom-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.proyect-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  place-content: center center;
+  justify-items: center;
+  align-items: center;
+}
+
+.first-container {
+  width: 980px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 30px;
+}
+
+.firts-container-text p:nth-child(1) {
+  font-weight: bold;
+  font-size: 50px;
+  padding-right: 50px;
+  color: var(--Very-Dark-Magenta);
+  margin-bottom: 16px;
+}
+
+.firts-container-text p:nth-child(2) {
+  font-weight: 500;
+  color: var(--Dark-Grayish-Magenta);
+  padding-right: 80px;
+  line-height: 20px;
+}
+
+.first-container-ratings {
+  display: grid;
+  align-items: center;
+  grid-auto-rows: 1fr 1fr 1fr;
+  row-gap: 10px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  width: 85%;
+  height: 55px;
+  background-color: var(--Light-Grayish-Magenta);
+  border-radius: 10px;
+}
+
+.rating .stars {
+  margin: 0 30px;
+}
+
+.rating .stars-text {
+  color: var(--Very-Dark-Magenta);
+  font-weight: bold;
+}
+
+.second-rating {
+  justify-self: center;
+}
+
+.third-rating {
+  justify-self: end;
+}
+
+.second-container {
+  width: 980px;
+  height: 250px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 20px;
+}
+
+.review-container {
+  width: 90%;
+  height: 80%;
+  grid-template-rows: 0.6fr 1fr;
+  background-color: var(--Very-Dark-Magenta);
+  border-radius: 10px;
+}
+
+.person {
+  display: flex;
+}
+.person img {
+  margin: 20px 20px 20px 30px;
+  height: 40px;
+  border-radius: 50px;
+}
+
+.person-name {
+  margin-top: 35px;
+}
+
+.person-name p:nth-child(1) {
+  color: var(--White);
+  font-weight: 500;
+}
+
+.person-name p:nth-child(2) {
+  color: var(--Soft-Pink);
+}
+
+.person-review {
+  margin: 10px 30px 30px 30px;
+  line-height: 18px;
+  color: var(--Light-Grayish-Magenta);
+}
+
+.second-review {
+  align-self: center;
+}
+.third-review {
+  align-self: end;
+}
