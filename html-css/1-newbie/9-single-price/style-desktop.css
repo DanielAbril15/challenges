@@ -1,0 +1,29 @@
+@media (min-width: 450px) {
+  body {
+    display: grid;
+    justify-items: center;
+    height: 100vh;
+    align-items: center;
+  }
+  .proyect-container {
+    max-width: 780px;
+    justify-self: center;
+    grid-template-areas:
+      "first first"
+      "second tercero";
+  }
+  .description-proyect {
+    grid-area: first;
+  }
+  .price-proyect {
+    grid-area: second;
+    margin-left: 15%;
+    margin-bottom: 50px;
+    border-radius: 0 0 0 10px;
+  }
+  .footer-proyect {
+    grid-area: tercero;
+    margin-right: 15%;
+    border-radius: 0 0 10px 0;
+  }
+}

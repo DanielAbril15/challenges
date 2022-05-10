@@ -1,0 +1,119 @@
+:root {
+  --Cyan: hsl(179, 62%, 43%);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+  --Grayish-Blue2: hsl(218, 30%, 82%);
+  --Cyan2: rgb(50, 201, 199);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Karla", sans-serif;
+}
+html {
+  background-color: var(--Light-Gray);
+}
+.proyect-container {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-rows: auto;
+  margin-top: 50px;
+  justify-items: center;
+}
+
+.description-proyect {
+  display: grid;
+  width: 85%;
+  padding: 30px 25px;
+  background-color: white;
+  border-radius: 10px 10px 0 0;
+}
+.description-proyect .title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: var(--Cyan);
+}
+.description-proyect .subtitle {
+  color: var(--Bright-Yellow);
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.description-proyect .text {
+  color: var(--Grayish-Blue);
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.price-proyect {
+  display: grid;
+  width: 85%;
+  padding: 25px;
+  background-color: var(--Cyan);
+}
+
+.price-proyect p:nth-child(1) {
+  font-size: 18px;
+  color: var(--Light-Gray);
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+.price-proyect p:nth-child(2) {
+  display: flex;
+  font-size: 30px;
+  color: white;
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+
+.price-proyect p:nth-child(2) span {
+  font-size: 16px;
+  color: var(--Grayish-Blue2);
+  font-weight: 300;
+  margin: 8px 0 0 10px;
+}
+
+.price-proyect p:nth-child(3) {
+  color: var(--Light-Gray);
+  margin-bottom: 30px;
+}
+
+.button {
+  display: grid;
+  justify-self: center;
+  background-color: var(--Bright-Yellow);
+  height: 50px;
+  width: 100%;
+  border-radius: 10px;
+  align-items: center;
+}
+.button a {
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  color: var(--Light-Gray);
+}
+
+.footer-proyect {
+  display: grid;
+  width: 85%;
+  padding: 25px;
+  border-radius: 0 0 10px 10px;
+  background-color: var(--Cyan2);
+  margin-bottom: 50px;
+}
+
+.footer-proyect p:nth-child(1) {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--Light-Gray);
+  margin-bottom: 20px;
+}
+
+.footer-proyect p:nth-child(2) {
+  color: var(--Grayish-Blue2);
+  line-height: 25px;
+}
